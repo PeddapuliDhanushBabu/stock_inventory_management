@@ -1,0 +1,3 @@
+import { FiSearch, FiBell, FiPlus, FiChevronDown } from 'react-icons/fi';
+import { useNavigation } from '../../navigation';
+export default function Navbar() { const { page, navigate } = useNavigation(); return <header className="navbar"><div className="mobile-logo">stoq<span>.</span></div><div className="breadcrumb"><span>Workspace</span><i>/</i><b>{page}</b></div><div className="nav-actions"><label className="search-box"><FiSearch /><input placeholder="Search anything..." /><kbd>⌘ K</kbd></label><button className="notification"><FiBell /><i /></button><button onClick={() => navigate('Products')} className="add-product"><FiPlus /> Add product <FiChevronDown /></button></div></header>; }

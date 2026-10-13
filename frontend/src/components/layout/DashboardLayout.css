@@ -1,0 +1,16 @@
+.dashboard-container{
+display:flex;
+background:#0F172A;
+min-height:100vh;
+}
+
+.dashboard-main{
+margin-left:260px;
+flex:1;
+padding:25px;
+transition:.3s;
+}
+
+.dashboard-content{
+width:100%;
+}
